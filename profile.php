@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +23,7 @@
                 <div class="card">
                     <img src="https://via.placeholder.com/300" class="card-img-top" alt="Profile Picture">
                     <div class="card-body text-center">
-                        <h5 class="card-title">John Doe</h5>
+                        <h5 class="card-title"><?php echo $_SESSION['user_id']?></h5>
                         <p class="text-muted">Premium Member</p>
                         <button class="btn btn-primary btn-sm">Edit Profile</button>
                     </div>
@@ -32,7 +36,7 @@
                         <h5>Account Information</h5>
                     </div>
                     <div class="card-body">
-                        <p><strong>Email:</strong> john@example.com</p>
+                        <p><strong>Email:</strong> <?php echo $_SESSION['user_email'] ?></p>
                         <p><strong>Phone:</strong> +1 (555) 123-4567</p>
                         <p><strong>Member Since:</strong> January 15, 2023</p>
                     </div>
