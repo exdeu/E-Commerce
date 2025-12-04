@@ -19,6 +19,7 @@
                 $_SESSION['user_fname'] = $row['fname'];
                 $_SESSION['user_lname'] = $row['lname'];
                 $_SESSION['user_email'] = $row['email'];
+                $_SESSION['date'] = $row['time'];
                 header("Location: home.php");
                 exit();
             } else {

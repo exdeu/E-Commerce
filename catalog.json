@@ -1,0 +1,418 @@
+{
+    "store": "Hablon Store",
+    "currency": "USD",
+    "last_updated": "2025-12-04",
+    "categories": [
+        {
+            "id": "apparel",
+            "title": "Apparel",
+            "description": "Ready-to-wear garments crafted from handwoven Hablon fabric.",
+            "items": [
+                {
+                    "sku": "HBL-APP-001",
+                    "name": "Men's Traditional Shirt",
+                    "description": "Traditional cut with light, breathable handwoven Hablon material.",
+                    "price": 45.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Men's+Shirt",
+                    "tags": ["men","shirt","traditional"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-APP-002",
+                    "name": "Women's Casual Blouse",
+                    "description": "Casual design with variety of colors and patterns in handwoven fabric.",
+                    "price": 39.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Women's+Blouse",
+                    "tags": ["women","blouse","casual"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-APP-003",
+                    "name": "A-Line Hablon Skirt",
+                    "description": "A-line design with soft drape fabric in traditional weaves.",
+                    "price": 52.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Skirt",
+                    "tags": ["skirt","women","aline"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-APP-004",
+                    "name": "Evening Gown with Metallic Threads",
+                    "description": "Elegant evening gown featuring metallic thread accents for festive occasions.",
+                    "price": 89.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Evening+Gown",
+                    "tags": ["gown","evening","metallic"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-APP-005",
+                    "name": "Hablon-Accented Fashion Jacket",
+                    "description": "Modern style jacket with Hablon fabric accents for versatile styling.",
+                    "price": 74.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Fashion+Jacket",
+                    "tags": ["jacket","outerwear"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-APP-006",
+                    "name": "Kids' Lightweight Dress",
+                    "description": "Lightweight Hablon fabric suitable for children, comfortable and breathable.",
+                    "price": 29.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Kids+Clothing",
+                    "tags": ["kids","dress"],
+                    "available": true
+                }
+            ]
+        },
+        {
+            "id": "accessories",
+            "title": "Accessories",
+            "description": "Small wearable Hablon-made fashion items.",
+            "items": [
+                {
+                    "sku": "HBL-ACC-001",
+                    "name": "Intricately Patterned Scarf",
+                    "description": "Wide, soft scarf with intricate Hablon patterns for elegant styling.",
+                    "price": 24.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Scarf",
+                    "tags": ["scarf","shawl"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-ACC-002",
+                    "name": "Hablon Pocket Square",
+                    "description": "Premium handkerchief ideal as pocket square or small decorative cloth.",
+                    "price": 12.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Handkerchief",
+                    "tags": ["handkerchief","pocket-square"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-ACC-003",
+                    "name": "Lightweight Hablon Headband",
+                    "description": "Comfortable headband made from lightweight woven material.",
+                    "price": 9.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Headband",
+                    "tags": ["headband","hair"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-ACC-004",
+                    "name": "Hablon Formal Necktie",
+                    "description": "Premium formal wear accent crafted from handwoven Hablon fabric.",
+                    "price": 18.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Necktie",
+                    "tags": ["necktie","formal"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-ACC-005",
+                    "name": "Hablon Textile Overlay Belt",
+                    "description": "Stylish belt with handwoven Hablon textile overlay for versatile wear.",
+                    "price": 22.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Belt",
+                    "tags": ["belt","accessory"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-ACC-006",
+                    "name": "Hablon Panel Design Hat",
+                    "description": "Stylish cap featuring Hablon fabric panel designs.",
+                    "price": 26.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Hat",
+                    "tags": ["hat","cap"],
+                    "available": true
+                }
+            ]
+        },
+        {
+            "id": "bags",
+            "title": "Bags & Pouches",
+            "description": "Hablon-crafted carriers and organizers.",
+            "items": [
+                {
+                    "sku": "HBL-BAG-001",
+                    "name": "Everyday Hablon Tote Bag",
+                    "description": "Spacious tote with reinforced straps for everyday carry.",
+                    "price": 54.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Tote+Bag",
+                    "tags": ["tote","bag"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-BAG-002",
+                    "name": "Fashion-Forward Shoulder Bag",
+                    "description": "Contemporary shoulder bag design with handwoven Hablon fabric.",
+                    "price": 64.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Shoulder+Bag",
+                    "tags": ["shoulder-bag","fashion"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-BAG-003",
+                    "name": "Elegant Woven Handbag",
+                    "description": "Sophisticated handbag featuring elegant woven textures.",
+                    "price": 69.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Handbag",
+                    "tags": ["handbag","woven"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-BAG-004",
+                    "name": "Formal Event Clutch",
+                    "description": "Premium clutch perfect for formal and casual events.",
+                    "price": 45.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Clutch",
+                    "tags": ["clutch","evening"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-BAG-005",
+                    "name": "Compact Coin Purse",
+                    "description": "Portable coin purse ideal for storing essentials.",
+                    "price": 14.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Coin+Purse",
+                    "tags": ["coin-purse","small"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-BAG-006",
+                    "name": "Padded Laptop Sleeve",
+                    "description": "Protective sleeve with padded interior and woven exterior.",
+                    "price": 39.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Laptop+Sleeve",
+                    "tags": ["laptop-sleeve","gadget"],
+                    "available": true
+                }
+            ]
+        },
+        {
+            "id": "home",
+            "title": "Home & Living",
+            "description": "Hablon textiles for interior decoration.",
+            "items": [
+                {
+                    "sku": "HBL-HOME-001",
+                    "name": "Hablon Table Runner",
+                    "description": "Long woven strips perfect for table decoration.",
+                    "price": 34.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Table+Runner",
+                    "tags": ["table-runner","home"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-HOME-002",
+                    "name": "Heat-Resistant Placemat Set",
+                    "description": "Woven placemats and coasters set for dining protection.",
+                    "price": 28.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Placemats",
+                    "tags": ["placemats","coasters"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-HOME-003",
+                    "name": "Decorative Cushion Cover",
+                    "description": "Beautiful pillow cover for elegant home decoration.",
+                    "price": 32.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Cushion+Cover",
+                    "tags": ["cushion","decor"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-HOME-004",
+                    "name": "Light-Filtering Hablon Curtains",
+                    "description": "Soft fabric curtains perfect for ambient lighting.",
+                    "price": 79.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Curtains",
+                    "tags": ["curtains","window"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-HOME-005",
+                    "name": "Artistic Hablon Wall Hanging",
+                    "description": "Decorative wall piece featuring artistic weaves.",
+                    "price": 59.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Wall+Hanging",
+                    "tags": ["wall-hanging","art"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-HOME-006",
+                    "name": "Accent Bed Throw",
+                    "description": "Layering fabric to add style and comfort to your bed.",
+                    "price": 49.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Bed+Throw",
+                    "tags": ["bed-throw","bedding"],
+                    "available": true
+                }
+            ]
+        },
+        {
+            "id": "fabric",
+            "title": "Fabric Yardage",
+            "description": "Raw woven fabric for DIY creations.",
+            "items": [
+                {
+                    "sku": "HBL-FAB-001",
+                    "name": "Plain Hablon Fabric (per yard)",
+                    "description": "Solid colors or simple weaves for your DIY projects.",
+                    "price": 18.99,
+                    "unit": "per yard",
+                    "image_url": "https://via.placeholder.com/300x250?text=Plain+Fabric",
+                    "tags": ["fabric","plain"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-FAB-002",
+                    "name": "Striped Hablon Fabric (per yard)",
+                    "description": "Geometric or traditional designs for creative projects.",
+                    "price": 22.99,
+                    "unit": "per yard",
+                    "image_url": "https://via.placeholder.com/300x250?text=Patterned+Fabric",
+                    "tags": ["fabric","patterned","striped"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-FAB-003",
+                    "name": "Metallic Thread Hablon (per yard)",
+                    "description": "Shimmering festive weaves for special occasions.",
+                    "price": 28.99,
+                    "unit": "per yard",
+                    "image_url": "https://via.placeholder.com/300x250?text=Metallic+Fabric",
+                    "tags": ["fabric","metallic"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-FAB-004",
+                    "name": "Custom Made-to-Order Weave",
+                    "description": "Personalized patterns and colors based on your preferences.",
+                    "price": 34.99,
+                    "unit": "per order",
+                    "image_url": "https://via.placeholder.com/300x250?text=Custom+Weave",
+                    "tags": ["custom","made-to-order"],
+                    "available": true
+                }
+            ]
+        },
+        {
+            "id": "souvenirs",
+            "title": "Souvenirs & Gifts",
+            "description": "Small, gift-worthy Hablon items.",
+            "items": [
+                {
+                    "sku": "HBL-GFT-001",
+                    "name": "Hablon Fabric Keychain",
+                    "description": "Mini fabric patch keychain for everyday carry.",
+                    "price": 7.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Keychain",
+                    "tags": ["keychain","souvenir"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-GFT-002",
+                    "name": "Hablon Woven Bookmark",
+                    "description": "Flat woven strip bookmark for book lovers.",
+                    "price": 6.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Bookmark",
+                    "tags": ["bookmark","gift"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-GFT-003",
+                    "name": "Mini Hablon Loom Souvenir",
+                    "description": "Decorative miniature loom commemorating traditional weaving.",
+                    "price": 16.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Mini+Loom",
+                    "tags": ["mini-loom","souvenir"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-GFT-004",
+                    "name": "Hablon Gift Bundle Set",
+                    "description": "Bundle containing fabric and accessory combinations.",
+                    "price": 44.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Gift+Set",
+                    "tags": ["gift-set","bundle"],
+                    "available": true
+                }
+            ]
+        },
+        {
+            "id": "premium",
+            "title": "Premium / Limited Collections",
+            "description": "High-value or exclusive Hablon products.",
+            "items": [
+                {
+                    "sku": "HBL-PRM-001",
+                    "name": "Designer Collaboration Collection",
+                    "description": "Special edition creations from renowned designers.",
+                    "price": 129.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Designer+Collection",
+                    "tags": ["designer","limited"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-PRM-002",
+                    "name": "Limited-Edition Hablon Fabric",
+                    "description": "Scarce and unique patterns for exclusive projects.",
+                    "price": 49.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Limited+Edition",
+                    "tags": ["limited-edition","fabric"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-PRM-003",
+                    "name": "Heritage Patterns Collection",
+                    "description": "Cultural traditional motifs celebrating heritage weaving.",
+                    "price": 99.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Heritage+Patterns",
+                    "tags": ["heritage","patterns"],
+                    "available": true
+                }
+            ]
+        },
+        {
+            "id": "corporate",
+            "title": "Corporate & Event Orders",
+            "description": "Bulk and customized Hablon-based orders.",
+            "items": [
+                {
+                    "sku": "HBL-CORP-001",
+                    "name": "Customized Corporate Scarves",
+                    "description": "Personalized with corporate colors/logos for branding.",
+                    "price": 35.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Custom+Scarves",
+                    "tags": ["custom","bulk"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-CORP-002",
+                    "name": "Custom Uniform Fabric",
+                    "description": "Custom patterns designed for uniforms and workwear.",
+                    "price": 25.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Uniform+Fabric",
+                    "tags": ["uniform","fabric"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-CORP-003",
+                    "name": "Event Giveaway Bulk Pack",
+                    "description": "Hablon tokens in bulk quantities for events.",
+                    "price": 99.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Event+Giveaway",
+                    "tags": ["event","giveaway","bulk"],
+                    "available": true
+                },
+                {
+                    "sku": "HBL-CORP-004",
+                    "name": "Premium Corporate Gift Bundle",
+                    "description": "Exclusive assortments designed for corporate clients.",
+                    "price": 159.99,
+                    "image_url": "https://via.placeholder.com/300x250?text=Corporate+Gifts",
+                    "tags": ["corporate","gift"],
+                    "available": true
+                }
+            ]
+        }
+    ]
+}

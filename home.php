@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">ShopHub</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -23,8 +23,9 @@
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "logout.php" : "login.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
                     <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="profile.php">Profile</a></li>'?>
+                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="cart.php">Cart</a></li>'?>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "logout.php" : "login.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
                 </ul>
             </div>
         </div>
@@ -47,11 +48,34 @@
             <a href="register.php" class="btn btn-success btn-lg">Join Us</a>
         </div>
     </section>
-
+    
     <!-- Footer -->
-    <footer id = "about" class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p>&copy; 2024 ShopHub. All rights reserved.</p>
+    <footer id="about" class="bg-dark text-white mt-5 p-5">
+        <div class="container p-5">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h5>About ShopHub</h5>
+                    <p>Your trusted online shopping destination for quality products.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white-50">Terms of Service</a></li>
+                        <li><a href="#" class="text-white-50">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <p>
+                        <a href="#" class="text-white-50 me-2">Facebook</a>
+                        <a href="#" class="text-white-50 me-2">Twitter</a>
+                        <a href="#" class="text-white-50">Instagram</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <p class="text-center mb-4">&copy; 2024 ShopHub. All rights reserved.</p>
         </div>
     </footer>
 

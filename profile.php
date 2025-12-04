@@ -23,10 +23,9 @@
                     <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "logout.php" : "login.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
                     <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link active" href="profile.php">Profile</a></li>'?>
-                </ul>
-                </ul>
+                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="cart.php">Cart</a></li>'?>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "logout.php" : "login.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
                 </ul>
             </div>
         </div>
@@ -39,7 +38,6 @@
                     <img src="user_img/def.jpg" class="card-img-top" alt="Profile Picture">
                     <div class="card-body text-center">
                         <h5 class="card-title"><?php echo $_SESSION['user_fname']." ".$_SESSION['user_lname']?></h5>
-                        <button class="btn btn-primary btn-sm">Edit Profile</button>
                     </div>
                 </div>
             </div>
@@ -51,12 +49,9 @@
                     </div>
                     <div class="card-body">
                         <p><strong>Email:</strong> <?php echo $_SESSION['user_email'] ?></p>
-                        <p><strong>Member Since:</strong> January 15, 2023</p>
+                        <p><strong>Member Since:</strong> <?php echo $_SESSION['date'] ?></p>
                     </div>
                 </div>
-
-
-
                 <div class="card">
                     <div class="card-header">
                         <h5>Recent Orders</h5>
@@ -91,9 +86,33 @@
             </div>
         </div>
     </div>
-     <footer id = "about" class="bg-dark text-white py-4 mt-5">
-        <div class="container text-center">
-            <p>&copy; 2024 ShopHub. All rights reserved.</p>
+    <!-- Footer -->
+    <footer id="about" class="bg-dark text-white mt-5 p-5">
+        <div class="container p-5">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h5>About ShopHub</h5>
+                    <p>Your trusted online shopping destination for quality products.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white-50">Terms of Service</a></li>
+                        <li><a href="#" class="text-white-50">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <p>
+                        <a href="#" class="text-white-50 me-2">Facebook</a>
+                        <a href="#" class="text-white-50 me-2">Twitter</a>
+                        <a href="#" class="text-white-50">Instagram</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <p class="text-center mb-5">&copy; 2024 ShopHub. All rights reserved.</p>
         </div>
     </footer>
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
