@@ -11,9 +11,21 @@
     <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">E-Commerce Store</a>
+            <a class="navbar-brand" href="#">ShopHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -36,7 +48,7 @@
                         <h5>Account Information</h5>
                     </div>
                     <div class="card-body">
-                        <p><strong>Email:</strong> <?php echo $_SESSION['user_email'] ?></p>
+                        <p><strong>Email:</strong> <?php echo $_SESSION['user_fname'] . $_SESSION['user_lname'] ?></p>
                         <p><strong>Phone:</strong> +1 (555) 123-4567</p>
                         <p><strong>Member Since:</strong> January 15, 2023</p>
                     </div>
