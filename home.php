@@ -20,11 +20,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.php">Log In</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "logout.php" : "login.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
+                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="profile.php">Profile</a></li>'?>
                 </ul>
             </div>
         </div>
@@ -35,51 +35,21 @@
         <div class="container text-center">
             <h1 class="display-4 mb-4">Welcome to ShopHub</h1>
             <p class="lead mb-4">Discover amazing products at unbeatable prices</p>
-            <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+            <a href="products.php" class="btn btn-primary btn-lg">Shop Now</a>
         </div>
     </section>
 
-    <!-- Featured Products -->
+    <!-- Promotional Section -->
     <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Featured Products</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="bg-secondary" style="height: 200px;"></div>
-                        <div class="card-body">
-                            <h5 class="card-title">Product 1</h5>
-                            <p class="card-text">$29.99</p>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="bg-secondary" style="height: 200px;"></div>
-                        <div class="card-body">
-                            <h5 class="card-title">Product 2</h5>
-                            <p class="card-text">$39.99</p>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="bg-secondary" style="height: 200px;"></div>
-                        <div class="card-body">
-                            <h5 class="card-title">Product 3</h5>
-                            <p class="card-text">$49.99</p>
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="container text-center">
+            <h2 class="mb-4">Exclusive Offers</h2>
+            <p class="lead mb-4">Sign up now to receive exclusive discounts and updates!</p>
+            <a href="register.php" class="btn btn-success btn-lg">Join Us</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer id = "about" class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
             <p>&copy; 2024 ShopHub. All rights reserved.</p>
         </div>

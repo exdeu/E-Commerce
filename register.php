@@ -1,3 +1,27 @@
+<?php
+    include 'db_connection.php';
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $fname = $_POST['fname'];
+        $lname = $_POST['lname'];
+        $email = $_POST['email'];
+        $password = password_hash($_POST['pw'], PASSWORD_BCRYPT);
+        $check_sql = "SELECT * FROM users WHERE email='$email' and fname='$fname' and lname='$lname'";
+        $result = mysqli_query($con, $check_sql);
+
+        if (mysqli_num_rows($result) > 0) {
+            header("Location: register.php?error=2");
+            exit();
+        }
+        $sql = "INSERT INTO users (fname, lname, email, password) VALUES ('$fname','$lname', '$email', '$password')";
+
+        if (mysqli_query($con, $sql)) {
+            header("Location: login.php");
+            exit();
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($con);
+        }
+    } 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,15 +35,15 @@
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="card shadow-sm" style="width: 100%; max-width: 400px;">
             <div class="card-body p-5">
-                 <?php
-                        if (isset($_GET['error']) && $_GET['error'] == 2) {
-                            echo '<div class="alert alert-danger text-center" role="alert">
-                                    Account already exists.
-                                  </div>';
-                        }
-                    ?>
+                <?php
+                    if (isset($_GET['error']) && $_GET['error'] == 2) {
+                        echo '<div class="alert alert-danger text-center" role="alert">
+                                Account already exists.
+                            </div>';
+                    }
+                ?>
                 <h2 class="card-title text-center mb-4">Create Account</h2>
-                <form id = "reg" method="POST" action="reg.php">
+                <form id = "reg" method="POST" action="register.php">
                     <div class="mb-3">
                         <label for="full_name" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter your full name" required>
@@ -38,25 +62,7 @@
                         <div id="password-validation" class="mt-2" style="display: none;">
                             <small class="text-danger">Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character.</small>
                         </div>
-                        <script>
-                            const passwordInput = document.getElementById('pw');
-                            const validationMessage = document.getElementById('password-validation');
-                            let confirmed = false;
-                            passwordInput.addEventListener('input', function() {
-                                const password = passwordInput.value;
-                                const isValid = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password);
-                                validationMessage.style.display = isValid ? 'none' : 'block';
-                                if(isValid) confirmed = true;
-                                else confirmed = false;
-                            });
-
-                            function confirm() {
-                                if (confirmed) {
-                                    document.getElementById('reg').submit();
-                                } else {
-                                    alert('Please enter a valid password before registering.');
-                                }
-                            }
+                        <script src = "validation.js">
                         </script>
                     </div>
                     <div class="mb-3">

@@ -20,10 +20,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "logout.php" : "login.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
+                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link active" href="profile.php">Profile</a></li>'?>
+                </ul>
+                </ul>
                 </ul>
             </div>
         </div>
@@ -33,10 +36,9 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Profile Picture">
+                    <img src="user_img/def.jpg" class="card-img-top" alt="Profile Picture">
                     <div class="card-body text-center">
-                        <h5 class="card-title"><?php echo $_SESSION['user_id']?></h5>
-                        <p class="text-muted">Premium Member</p>
+                        <h5 class="card-title"><?php echo $_SESSION['user_fname']." ".$_SESSION['user_lname']?></h5>
                         <button class="btn btn-primary btn-sm">Edit Profile</button>
                     </div>
                 </div>
@@ -48,21 +50,12 @@
                         <h5>Account Information</h5>
                     </div>
                     <div class="card-body">
-                        <p><strong>Email:</strong> <?php echo $_SESSION['user_fname'] . $_SESSION['user_lname'] ?></p>
-                        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                        <p><strong>Email:</strong> <?php echo $_SESSION['user_email'] ?></p>
                         <p><strong>Member Since:</strong> January 15, 2023</p>
                     </div>
                 </div>
 
-                <div class="card mb-3">
-                    <div class="card-header">
-                        <h5>Shipping Address</h5>
-                    </div>
-                    <div class="card-body">
-                        <p>123 Main Street<br>New York, NY 10001<br>United States</p>
-                        <button class="btn btn-secondary btn-sm">Edit Address</button>
-                    </div>
-                </div>
+
 
                 <div class="card">
                     <div class="card-header">
@@ -98,7 +91,11 @@
             </div>
         </div>
     </div>
-
+     <footer id = "about" class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 ShopHub. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
