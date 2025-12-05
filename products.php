@@ -35,7 +35,6 @@
             font-style: italic;
         }
     </style>
-    <script src="catalog.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -60,8 +59,11 @@
     
     <!-- Products Section -->
     <div id = "catalog-container" class="container my-5">
-        <!-- Product categories will be dynamically loaded here -->
-         
+        <script src="catalog.js"></script>
+        <script><?php if(isset($_SESSION['user_id'])) 
+            echo "logged = true;";
+        ?>
+        </script>
     </div>
 
     <!-- Footer -->
@@ -95,6 +97,5 @@
     </footer>
 
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="order.js"></script>
 </body>
 </html>

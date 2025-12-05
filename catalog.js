@@ -1,3 +1,4 @@
+let logged = false;
 async function loadCatalog() {
     try {
         const response = await fetch('catalog.json');
@@ -56,10 +57,42 @@ function displayProducts(items) {
                 </div>
             </div>
         `;
-        col.children[0].querySelector('button').addEventListener('click', () => {
-            alert(`Added ${product.name} to cart!`);
+        col.children[0].querySelector('button').addEventListener('click', () => {   
+            if(!logged){
+                alert('Please log in to place an order.');
+                return;
+            }
+            fetch('orders.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(product)
+            })
+            .then(async response => {
+                let data;
+                try {
+                    data = await response.json();
+                } catch (e) {
+                    throw new Error('Server returned invalid JSON');
+                }
+                if (!response.ok) {
+                    throw new Error(data.message || 'Server error');
+                }
+                return data;
+            })
+            .then(data => {
+                if (data.success) {
+                    alert('Order placed successfully!');
+                } else {
+                    alert('Failed to place order: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Something went wrong: ' + error.message);
+            });
         });
-        
         row.appendChild(col);
     });
     return row;
