@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include 'db_connection.php';
+    include '../db_connection.php';
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = $_POST['email'];
@@ -20,7 +20,7 @@
                 $_SESSION['user_lname'] = $row['lname'];
                 $_SESSION['user_email'] = $row['email'];
                 $_SESSION['date'] = $row['time'];
-                header("Location: home.php");
+                header("Location: ../home.php");
                 exit();
             } else {
                 header("Location: login.php?error=1");
@@ -39,7 +39,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - E-Commerce Store</title>
-    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
@@ -70,7 +70,7 @@
                     ?>
                 </form>
                 <hr>
-                <p class="text-center mb-0">Don't have an account? <a href="register.php">Sign up here</a></p>
+                <p class="text-center mb-0">Don't have an account? <a href="../info/register.php">Sign up here</a></p>
                 <p class="text-center"><a href="#forgot">Forgot password?</a></p>
             </div>
         </div>
@@ -80,6 +80,6 @@
             <p>&copy; 2024 ShopHub. All rights reserved.</p>
         </div>
     </footer>
-    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

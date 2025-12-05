@@ -1,5 +1,10 @@
-<?php
-    include 'db_connection.php';
+<?php 
+    session_start();
+    if(isset($_SESSION['user_id'])) {   
+        $_SESSION = array();
+        session_destroy();
+    }
+    include '../db_connection.php';
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];
@@ -15,7 +20,7 @@
         $sql = "INSERT INTO users (fname, lname, email, password) VALUES ('$fname','$lname', '$email', '$password')";
 
         if (mysqli_query($con, $sql)) {
-            header("Location: login.php");
+            header("Location: ../login/login.php");
             exit();
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($con);
@@ -29,7 +34,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
@@ -75,10 +80,10 @@
                     </div>
                     <button type="button" class="btn btn-primary w-100" onclick="confirm()">Register</button>
                 </form>
-                <p class="text-center mt-3">Already have an account? <a href="login.php">Login here</a></p>
+                <p class="text-center mt-3">Already have an account? <a href="../login/login.php">Login here</a></p>
             </div>
         </div>
     </div>
-    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

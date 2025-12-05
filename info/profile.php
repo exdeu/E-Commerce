@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
-    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -20,12 +20,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../home.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../prod/products.php">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link active" href="profile.php">Profile</a></li>'?>
-                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="cart.php">Cart</a></li>'?>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "logout.php" : "login.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
+                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="../prod/cart.php">Cart</a></li>'?>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "../login/logout.php" : "../login/login.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
                 </ul>
             </div>
         </div>
@@ -35,7 +35,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="user_img/def.jpg" class="card-img-top" alt="Profile Picture">
+                    <img src="../user_img/def.jpg" class="card-img-top" alt="Profile Picture">
                     <div class="card-body text-center">
                         <h5 class="card-title"><?php echo $_SESSION['user_fname']." ".$_SESSION['user_lname']?></h5>
                     </div>
@@ -115,6 +115,6 @@
             <p class="text-center mb-5">&copy; 2024 ShopHub. All rights reserved.</p>
         </div>
     </footer>
-    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

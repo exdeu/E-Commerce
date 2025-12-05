@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="cart.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -16,12 +17,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../home.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="profile.php">Profile</a></li>'?>
+                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="../info/profile.php">Profile</a></li>'?>
                     <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link active" href="cart.php">Cart</a></li>'?>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "logout.php" : "login.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "../login/logout.php" : "../loginlogin.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
                 </ul>
             </div>
         </div>
@@ -42,32 +43,18 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Laptop</td>
-                            <td>$999.00</td>
-                            <td><input type="number" class="form-control" value="1" style="width: 70px;"></td>
-                            <td>$999.00</td>
-                            <td><button class="btn btn-sm btn-danger">Remove</button></td>
-                        </tr>
-                        <tr>
-                            <td>Mouse</td>
-                            <td>$29.99</td>
-                            <td><input type="number" class="form-control" value="2" style="width: 70px;"></td>
-                            <td>$59.98</td>
-                            <td><button class="btn btn-sm btn-danger">Remove</button></td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="col-md-4">
                 <div class="card">
-                    <div class="card-body">
+                    <div id = "total" class="card-body">
                         <h5 class="card-title">Order Summary</h5>
                         <hr>
                         <div class="d-flex justify-content-between mb-2">
                             <span>Subtotal:</span>
-                            <span>$1,058.98</span>
+                            <span id = "subtotal"></span>
                         </div>
                         <div class="d-flex justify-content-between mb-2">
                             <span>Shipping:</span>
@@ -80,7 +67,7 @@
                         <hr>
                         <div class="d-flex justify-content-between mb-3">
                             <strong>Total:</strong>
-                            <strong>$1,154.70</strong>
+                            <strong id = "total_price"></strong>
                         </div>
                         <button class="btn btn-primary w-100">Checkout</button>
                         <a class="btn btn-outline-secondary w-100 mt-2" href = "products.php">Continue Shopping</a>
@@ -90,6 +77,6 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

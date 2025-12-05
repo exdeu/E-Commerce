@@ -21,11 +21,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="prod/products.php">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="profile.php">Profile</a></li>'?>
-                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="cart.php">Cart</a></li>'?>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "logout.php" : "login.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
+                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="info/profile.php">Profile</a></li>'?>
+                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="prod/cart.php">Cart</a></li>'?>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "login/logout.php" : "login/login.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
                 </ul>
             </div>
         </div>
@@ -36,7 +36,7 @@
         <div class="container text-center">
             <h1 class="display-4 mb-4">Welcome to ShopHub</h1>
             <p class="lead mb-4">Discover amazing products at unbeatable prices</p>
-            <a href="products.php" class="btn btn-primary btn-lg">Shop Now</a>
+            <a href="prod/products.php" class="btn btn-primary btn-lg">Shop Now</a>
         </div>
     </section>
 
@@ -45,7 +45,7 @@
         <div class="container text-center">
             <h2 class="mb-4">Exclusive Offers</h2>
             <p class="lead mb-4">Sign up now to receive exclusive discounts and updates!</p>
-            <a href="register.php" class="btn btn-success btn-lg">Join Us</a>
+            <a href="info/register.php" class="btn btn-success btn-lg">Join Us</a>
         </div>
     </section>
     
