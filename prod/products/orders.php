@@ -1,5 +1,5 @@
 <?php
-include '../db_connection.php';
+include '../../db_connection.php';
 session_start();
 
 // Always send JSON for this endpoint

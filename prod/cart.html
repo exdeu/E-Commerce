@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link href="../bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="cart.js"></script>
+    <script src="cart/cart.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -17,16 +16,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../home.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="../info/profile.php">Profile</a></li>'?>
-                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link active" href="cart.php">Cart</a></li>'?>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "../login/logout.php" : "../loginlogin.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
+                    <li class="nav-item"><a id="profile" class="nav-link" href="../profile/profile.html">Profile</a></li>
+                    <li class="nav-item"><a id="cart" class="nav-link active" href="">Cart</a></li>
+                    <li class="nav-item"><a id="log_stat" class="nav-link" href="../login/">Log In</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <script src="../check.js">
+    </script>
+    <script>  checkLogin('../get_user.php');</script>
 
     <div class="container mt-5">
         <div class="row">
@@ -69,8 +71,9 @@
                             <strong>Total:</strong>
                             <strong id = "total_price"></strong>
                         </div>
-                        <button class="btn btn-primary w-100">Checkout</button>
-                        <a class="btn btn-outline-secondary w-100 mt-2" href = "products.php">Continue Shopping</a>
+                        <button id="checkout" class="btn btn-primary w-100">Checkout</button>
+                        <script src="checkout.js"></script>
+                        <a class="btn btn-outline-secondary w-100 mt-2" href ="../prod/products.html">Continue Shopping</a>
                     </div>
                 </div>
             </div>

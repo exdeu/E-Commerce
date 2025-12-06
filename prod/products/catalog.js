@@ -1,3 +1,4 @@
+
 let logged = false;
 async function loadCatalog() {
     try {
@@ -58,12 +59,12 @@ function displayProducts(items) {
             </div>
         `;
         col.children[0].querySelector('button').addEventListener('click', () => {   
-            if(!logged){
+            if(document.getElementById('log_stat').logged === false) {
                 alert('Please log in to place an order.');
                 return;
             }
-            fetch('orders.php', {
-                method: 'POST',
+            fetch('products/orders.php', {
+                method: 'POST', 
                 headers: {
                     'Content-Type': 'application/json'
                 },

@@ -1,6 +1,6 @@
 async function loadCart(){
     try {
-        const response = await fetch('cartload.php', {
+        const response = await fetch('cart/cart.php', {
             method: 'POST'
         });
 
@@ -18,7 +18,7 @@ async function loadCart(){
     }   
 }
 async function removeCart(cart){
-    const response = await fetch('removecart.php', { method: 'POST',body: JSON.stringify(cart)});
+    const response = await fetch('cart/removecart.php', { method: 'POST',body: JSON.stringify(cart)});
     updatePrice();
 }
 
@@ -58,7 +58,7 @@ function updatePrice(){
         row.children[3].textContent = `$${(price * count).toFixed(2)}`;
     });
     document.getElementById('subtotal').textContent = `$${total.toFixed(2)}`;
-    document.getElementById('total_price').textContent = `$${totalPrice.toFixed(2)}`;
+    document.getElementById('total_price').textContent = `$${total.toFixed(2)}`;
 }
 
 document.addEventListener('DOMContentLoaded', loadCart);

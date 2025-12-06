@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,25 +45,24 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../home.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="products.php">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="../info/profile.php">Profile</a></li>'?>
-                    <?php if(isset($_SESSION['user_id'])) echo '<li class="nav-item"><a class="nav-link" href="cart.php">Cart</a></li>'?>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo isset($_SESSION['user_id']) ? "../login/logout.php" : "../login/login.php"?>"><?php echo isset($_SESSION['user_id']) ? "Log Out" : "Log In"?></a></li>
+                    <li class="nav-item"><a id="profile" class="nav-link " href="../profile/profile.html">Profile</a></li>
+                    <li class="nav-item"><a id="cart" class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a id="log_stat" class="nav-link" href="../login/">Log In</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    <script src="../check.js">
+    </script>
+    <script>checkLogin('../get_user.php');</script>
     
     <!-- Products Section -->
     <div id = "catalog-container" class="container my-5">
-        <script src="catalog.js"></script>
-        <script><?php if(isset($_SESSION['user_id'])) 
-            echo "logged = true;";
-        ?>
-        </script>
     </div>
+    <script src="products/catalog.js"></script>
 
     <!-- Footer -->
     <footer id="about" class="bg-dark text-white mt-5 p-5">
@@ -97,5 +95,6 @@
     </footer>
 
     <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+     
 </body>
 </html>

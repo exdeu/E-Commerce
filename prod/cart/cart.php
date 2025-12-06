@@ -1,7 +1,7 @@
 <?php
 ob_start(); // catch any accidental output
 
-include '../db_connection.php';
+include '../../db_connection.php';
 session_start();
 
 // Always send JSON
