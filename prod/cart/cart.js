@@ -43,8 +43,40 @@ function displayCartItems(carts) {
             row.remove();
             updatePrice();
         });
-        cartTableBody.appendChild(row);
-    });
+        row.children[2].querySelector('input').addEventListener('change', async (event) => {
+            const newCount = parseInt(event.target.value, 10);
+            if (isNaN(newCount) || newCount < 1) {
+                removeCart(cart);
+                row.remove();                        
+                return;
+            }
+            try {
+                const updateResponse = await fetch('cart/update.php', { 
+                    method: 'POST', 
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        prod_name: cart.prod_name,       
+                        count: newCount    
+                    })
+                });
+
+                const updateRes = await updateResponse.json();
+                if (updateRes.success) {
+                    cart.count = newCount; 
+                } else {
+                    console.error('Update failed:', updateRes.message);
+                    event.target.value = cart.count;
+                }
+            } catch (error) {
+                console.error('Error updating cart:', error);
+                event.target.value = cart.count;
+            }
+            updatePrice(); 
+        });
+            cartTableBody.appendChild(row);
+        });
     updatePrice();
 }
 

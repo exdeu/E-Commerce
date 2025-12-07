@@ -2,11 +2,9 @@
 include '../db_connection.php';
 session_start();
 
-// Always send JSON
 header('Content-Type: application/json');
 
 
-// Read and decode JSON body
 $json = file_get_contents('php://input');
 $data = json_decode($json, true);
 
@@ -21,7 +19,6 @@ if (!$data || !isset($data['email'], $data['password'])) {
 $email    = $data['email'];
 $password = $data['password'];
 
-// Prepare statement
 $sql  = "SELECT * FROM users WHERE email = ?";
 $stmt = mysqli_prepare($con, $sql);
 
@@ -51,7 +48,6 @@ if ($result && mysqli_num_rows($result) === 1) {
     $row = mysqli_fetch_assoc($result);
 
     if (password_verify($password, $row['password'])) {
-        // Set session data
         $_SESSION['user_id']    = $row['id'];
         $_SESSION['user_fname'] = $row['fname'] ?? null;
         $_SESSION['user_lname'] = $row['lname'] ?? null;
@@ -75,7 +71,7 @@ if ($result && mysqli_num_rows($result) === 1) {
     ]);
 }
 
-// Clean up
+
 mysqli_stmt_close($stmt);
 mysqli_close($con);
 exit();
