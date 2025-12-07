@@ -6,7 +6,6 @@ document.getElementById('checkout').addEventListener('click', async function() {
 
         const res = await response.json();
 
-        // FIXED: RES.SUCCESS, NOT RES.STATUS
         if (res.success) {
             alert('Checkout successful!');
             window.location.href = '../prod/products.html';

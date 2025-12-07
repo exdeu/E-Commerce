@@ -69,7 +69,7 @@ if ($stmt->num_rows > 0) {
 }
 $stmt->close();
 
-$insert_sql = "INSERT INTO users (fname, lname, email, password) VALUES (?, ?, ?, ?)";
+$insert_sql = "INSERT INTO users (fname, lname, email, `password`) VALUES (?, ?, ?, ?)";
 $stmt = $con->prepare($insert_sql);
 
 if (!$stmt) {
