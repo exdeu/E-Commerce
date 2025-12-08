@@ -345,16 +345,16 @@
                 {
                     "sku": "HBL-PRM-001",
                     "name": "Designer Collaboration Collection",
-                    "description": "This colorful scarf from Roots Collective PH features a handwoven, multi-hued design with fringed edges, showcasing Filipino artistry.",
+                    "description": "This limited edition hablon fabric from Panublix is a beautifully handwoven, rust.",
                     "price": 129.99,
-                    "description": "This limited edition hablon fabric from Panublix is a beautifully handwoven, rust
                     "image_url": "products/hablondesigner.png",
                     "tags": ["designer","limited"],
                     "available": true
                 },
                 {
                     "sku": "HBL-PRM-002",
-                    "name": "Limited-Edition Hablon Fabric",-colored textile with elegant white patterns, showcasing traditional Filipino artistry.",
+                    "name": "Limited-Edition Hablon Fabric",
+                    "description": "This colorful scarf from Roots Collective PH features a handwoven, multi-hued design with fringed edges, showcasing Filipino artistry.",
                     "price": 49.99,
                     "image_url": "products/hablonlimited.png",
                     "tags": ["limited-edition","fabric"],
