@@ -193,56 +193,56 @@
             "items": [
                 {
                     "sku": "HBL-HOME-001",
-                    "name": "Hablon Table Runner",
-                    "description": "Long woven strips perfect for table decoration.",
+                    "name": "Hablon Pillow Case",
+                    "description": "These hablon pillow cases blend colorful handwoven plaid fabric with a soft white accent, giving them a warm, homey feel that mixes tradition with a modern touch.",
                     "price": 34.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Table+Runner",
+                    "image_url": "https://hablonhome1.png/300x250?text=Table+Runner",
                     "tags": ["table-runner","home"],
                     "available": true
                 },
                 {
                     "sku": "HBL-HOME-002",
-                    "name": "Heat-Resistant Placemat Set",
-                    "description": "Woven placemats and coasters set for dining protection.",
+                    "name": "Hablon Table Runner",
+                    "description": "A light, pastel-striped hablon table runner that adds a warm, handmade touch to any table.",
                     "price": 28.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Placemats",
+                    "image_url": "https://hablonhome2.png/300x250?text=Placemats",
                     "tags": ["placemats","coasters"],
                     "available": true
                 },
                 {
                     "sku": "HBL-HOME-003",
-                    "name": "Decorative Cushion Cover",
-                    "description": "Beautiful pillow cover for elegant home decoration.",
+                    "name": "Hablon Table Napkin",
+                    "description": "A pastel-striped hablon table napkin adds a gentle, handmade warmth to the place setting, making the table feel cozy and thoughtfully prepared.",
                     "price": 32.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Cushion+Cover",
+                    "image_url": "https://hablonhome3.png/300x250?text=Cushion+Cover",
                     "tags": ["cushion","decor"],
                     "available": true
                 },
                 {
                     "sku": "HBL-HOME-004",
-                    "name": "Light-Filtering Hablon Curtains",
-                    "description": "Soft fabric curtains perfect for ambient lighting.",
+                    "name": "Hablon Curtain",
+                    "description": "A colorful, handwoven curtain that showcases Filipino tradition and adds warmth to any room.",
                     "price": 79.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Curtains",
+                    "image_url": "https://hablonhome4.png/300x250?text=Curtains",
                     "tags": ["curtains","window"],
                     "available": true
                 },
                 {
                     "sku": "HBL-HOME-005",
-                    "name": "Artistic Hablon Wall Hanging",
+                    "name": "Hablon Wall Hanging",
                     "description": "Decorative wall piece featuring artistic weaves.",
                     "price": 59.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Wall+Hanging",
+                    "image_url": "https://hablonhome5.png/300x250?text=Wall+Hanging",
                     "tags": ["wall-hanging","art"],
                     "available": true
                 },
                 {
                     "sku": "HBL-HOME-006",
-                    "name": "Accent Bed Throw",
-                    "description": "Layering fabric to add style and comfort to your bed.",
-                    "price": 49.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Bed+Throw",
-                    "tags": ["bed-throw","bedding"],
+                    "name": "Hablon Bed Runner",
+                    "description": "A neutral-toned, handwoven bed runner with stitched accents and fringed edges for a warm and rustic bedroom look.",
+                    "price": 59.99,
+                    "image_url": "https://hablonhome6.png/300x250?text=Wall+Hanging",
+                    "tags": ["wall-hanging","art"],
                     "available": true
                 }
             ]
