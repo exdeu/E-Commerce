@@ -347,7 +347,7 @@
                     "name": "Designer Collaboration Collection",
                     "description": "Special edition creations from renowned designers.",
                     "price": 129.99,
-                    "image_url": "https://hablondesigner.png/300x250?text=Designer+Collection",
+                    "image_url": "products/premuim1.jpg",
                     "tags": ["designer","limited"],
                     "available": true
                 },
