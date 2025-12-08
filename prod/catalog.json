@@ -74,7 +74,7 @@
                     "name": "Intricately Patterned Scarf",
                     "description": "Wide, soft scarf with intricate Hablon patterns for elegant styling.",
                     "price": 24.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Scarf",
+                    "image_url": "products/scarf-acce.jpg",
                     "tags": ["scarf","shawl"],
                     "available": true
                 },
@@ -83,7 +83,7 @@
                     "name": "Hablon Pocket Square",
                     "description": "Premium handkerchief ideal as pocket square or small decorative cloth.",
                     "price": 12.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Handkerchief",
+                    "image_url": "products/handkerchief-acce.jpg",
                     "tags": ["handkerchief","pocket-square"],
                     "available": true
                 },
@@ -92,7 +92,7 @@
                     "name": "Lightweight Hablon Headband",
                     "description": "Comfortable headband made from lightweight woven material.",
                     "price": 9.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Headband",
+                    "image_url": "products/headbands-acce.jpg",
                     "tags": ["headband","hair"],
                     "available": true
                 },
@@ -101,7 +101,7 @@
                     "name": "Hablon Formal Necktie",
                     "description": "Premium formal wear accent crafted from handwoven Hablon fabric.",
                     "price": 18.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Necktie",
+                    "image_url": "products/neckties-acce.jpg",
                     "tags": ["necktie","formal"],
                     "available": true
                 },
@@ -119,7 +119,7 @@
                     "name": "Hablon Panel Design Hat",
                     "description": "Stylish cap featuring Hablon fabric panel designs.",
                     "price": 26.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Hat",
+                    "image_url": "products/cap-acce.jpg",
                     "tags": ["hat","cap"],
                     "available": true
                 }
