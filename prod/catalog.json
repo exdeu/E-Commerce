@@ -110,7 +110,7 @@
                     "name": "Hablon Textile Overlay Belt",
                     "description": "Stylish belt with handwoven Hablon textile overlay for versatile wear.",
                     "price": 22.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Belt",
+                    "image_url": "products/belt-acce.jpg",
                     "tags": ["belt","accessory"],
                     "available": true
                 },
