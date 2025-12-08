@@ -304,7 +304,7 @@
                     "name": "Hablon Fabric Keychain",
                     "description": "Mini fabric patch keychain for everyday carry.",
                     "price": 7.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Keychain",
+                    "image_url": "products/sove-key.jpg",
                     "tags": ["keychain","souvenir"],
                     "available": true
                 },
@@ -313,7 +313,7 @@
                     "name": "Hablon Woven Bookmark",
                     "description": "Flat woven strip bookmark for book lovers.",
                     "price": 6.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Bookmark",
+                    "image_url": "products/sove-book.jpg",
                     "tags": ["bookmark","gift"],
                     "available": true
                 },
@@ -322,7 +322,7 @@
                     "name": "Mini Hablon Loom Souvenir",
                     "description": "Decorative miniature loom commemorating traditional weaving.",
                     "price": 16.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Mini+Loom",
+                    "image_url": "products/sove-loom.jpg",
                     "tags": ["mini-loom","souvenir"],
                     "available": true
                 },
@@ -331,7 +331,7 @@
                     "name": "Hablon Gift Bundle Set",
                     "description": "Bundle containing fabric and accessory combinations.",
                     "price": 44.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Gift+Set",
+                    "image_url": "products/sove-gifts.jpg",
                     "tags": ["gift-set","bundle"],
                     "available": true
                 }
