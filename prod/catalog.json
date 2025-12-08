@@ -365,7 +365,7 @@
                     "name": "Heritage Patterns Collection",
                     "description": "Cultural traditional motifs celebrating heritage weaving.",
                     "price": 99.99,
-                    "image_url": "products/premuim3.jpg,
+                    "image_url": "products/premuim3.jpg",
                     "tags": ["heritage","patterns"],
                     "available": true
                 }
