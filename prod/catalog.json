@@ -13,7 +13,7 @@
                     "name": "Men's Traditional Shirt",
                     "description": "Traditional cut with light, breathable handwoven Hablon material.",
                     "price": 45.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Men's+Shirt",
+                    "image_url": "products/mens-appar.jpg",
                     "tags": ["men","shirt","traditional"],
                     "available": true
                 },
@@ -22,7 +22,7 @@
                     "name": "Women's Casual Blouse",
                     "description": "Casual design with variety of colors and patterns in handwoven fabric.",
                     "price": 39.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Women's+Blouse",
+                    "image_url": "products/womens-appar.jpg",
                     "tags": ["women","blouse","casual"],
                     "available": true
                 },
@@ -31,7 +31,7 @@
                     "name": "A-Line Hablon Skirt",
                     "description": "A-line design with soft drape fabric in traditional weaves.",
                     "price": 52.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Skirt",
+                    "image_url": "products/skirts-appar.jpg",
                     "tags": ["skirt","women","aline"],
                     "available": true
                 },
@@ -40,7 +40,7 @@
                     "name": "Evening Gown with Metallic Threads",
                     "description": "Elegant evening gown featuring metallic thread accents for festive occasions.",
                     "price": 89.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Evening+Gown",
+                    "image_url": "products/gowns-appar.jpg",
                     "tags": ["gown","evening","metallic"],
                     "available": true
                 },
@@ -49,7 +49,7 @@
                     "name": "Hablon-Accented Fashion Jacket",
                     "description": "Modern style jacket with Hablon fabric accents for versatile styling.",
                     "price": 74.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Fashion+Jacket",
+                    "image_url": "products/jacket-appar.jpg",
                     "tags": ["jacket","outerwear"],
                     "available": true
                 },
@@ -58,7 +58,7 @@
                     "name": "Kids' Lightweight Dress",
                     "description": "Lightweight Hablon fabric suitable for children, comfortable and breathable.",
                     "price": 29.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Kids+Clothing",
+                    "image_url": "products/gowns-appar.jpg",
                     "tags": ["kids","dress"],
                     "available": true
                 }
