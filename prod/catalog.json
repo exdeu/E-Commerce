@@ -196,7 +196,7 @@
                     "name": "Hablon Pillow Case",
                     "description": "These hablon pillow cases blend colorful handwoven plaid fabric with a soft white accent, giving them a warm, homey feel that mixes tradition with a modern touch.",
                     "price": 34.99,
-                    "image_url": "https://hablonhome1.png/300x250?text=Table+Runner",
+                    "image_url": "products/hablonhome1.png",
                     "tags": ["table-runner","home"],
                     "available": true
                 },
@@ -205,7 +205,7 @@
                     "name": "Hablon Table Runner",
                     "description": "A light, pastel-striped hablon table runner that adds a warm, handmade touch to any table.",
                     "price": 28.99,
-                    "image_url": "https://hablonhome2.png/300x250?text=Placemats",
+                    "image_url": "products/hablonhome2.png",
                     "tags": ["placemats","coasters"],
                     "available": true
                 },
@@ -214,7 +214,7 @@
                     "name": "Hablon Table Napkin",
                     "description": "A pastel-striped hablon table napkin adds a gentle, handmade warmth to the place setting, making the table feel cozy and thoughtfully prepared.",
                     "price": 32.99,
-                    "image_url": "https://hablonhome3.png/300x250?text=Cushion+Cover",
+                    "image_url": "products/hablonhome3.png",
                     "tags": ["cushion","decor"],
                     "available": true
                 },
@@ -223,7 +223,7 @@
                     "name": "Hablon Curtain",
                     "description": "A colorful, handwoven curtain that showcases Filipino tradition and adds warmth to any room.",
                     "price": 79.99,
-                    "image_url": "https://hablonhome4.png/300x250?text=Curtains",
+                    "image_url": "products/hablonhome4.png",
                     "tags": ["curtains","window"],
                     "available": true
                 },
@@ -232,7 +232,7 @@
                     "name": "Hablon Wall Hanging",
                     "description": "Decorative wall piece featuring artistic weaves.",
                     "price": 59.99,
-                    "image_url": "https://hablonhome5.png/300x250?text=Wall+Hanging",
+                    "image_url": "products/hablonhome5.png",
                     "tags": ["wall-hanging","art"],
                     "available": true
                 },
@@ -241,7 +241,7 @@
                     "name": "Hablon Bed Runner",
                     "description": "A neutral-toned, handwoven bed runner with stitched accents and fringed edges for a warm and rustic bedroom look.",
                     "price": 59.99,
-                    "image_url": "https://hablonhome6.png/300x250?text=Wall+Hanging",
+                    "image_url": "products/hablonhome6.png",
                     "tags": ["wall-hanging","art"],
                     "available": true
                 }
@@ -345,27 +345,27 @@
                 {
                     "sku": "HBL-PRM-001",
                     "name": "Designer Collaboration Collection",
-                    "description": "Special edition creations from renowned designers.",
+                    "description": "This colorful scarf from Roots Collective PH features a handwoven, multi-hued design with fringed edges, showcasing Filipino artistry.",
                     "price": 129.99,
-                    "image_url": "products/premuim1.jpg",
+                    "description": "This limited edition hablon fabric from Panublix is a beautifully handwoven, rust
+                    "image_url": "products/hablondesigner.png",
                     "tags": ["designer","limited"],
                     "available": true
                 },
                 {
                     "sku": "HBL-PRM-002",
-                    "name": "Limited-Edition Hablon Fabric",
-                    "description": "Scarce and unique patterns for exclusive projects.",
+                    "name": "Limited-Edition Hablon Fabric",-colored textile with elegant white patterns, showcasing traditional Filipino artistry.",
                     "price": 49.99,
-                    "image_url": "products/premuim2.jpg",
+                    "image_url": "products/hablonlimited.png",
                     "tags": ["limited-edition","fabric"],
                     "available": true
                 },
                 {
                     "sku": "HBL-PRM-003",
                     "name": "Heritage Patterns Collection",
-                    "description": "Cultural traditional motifs celebrating heritage weaving.",
+                    "description": "Hablon fabrics from likhaan.com showcase traditional Filipino motifs, preserving and celebrating this rich textile heritage.",
                     "price": 99.99,
-                    "image_url": "products/premuim3.jpg",
+                    "image_url": "products/hablonheritage.png",
                     "tags": ["heritage","patterns"],
                     "available": true
                 }
