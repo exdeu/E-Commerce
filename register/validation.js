@@ -10,7 +10,8 @@ function confirm() {
     if (confirmed && document.getElementById("pw").value === document.getElementById("confirm-password").value) {
         registerUser();
     } else {
-        alert('Please enter a valid password before registering.');
+         document.getElementById("acc").style.display = "block";
+         document.getElementById("acc").innerText= 'Passwords don\'t match';
     }
 }
 
@@ -38,7 +39,7 @@ async function registerUser() {
             window.location.href = "../home.html";
         } else {
             document.getElementById("acc").style.display = "block";
-            alert("Error: " + data.message);
+            document.getElementById("acc").innerText = data.message;
         }
     } catch (err) {
         console.error(err);
