@@ -356,7 +356,7 @@
                     "name": "Limited-Edition Hablon Fabric",
                     "description": "Scarce and unique patterns for exclusive projects.",
                     "price": 49.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Limited+Edition",
+                    "image_url": "products/premuim2.jpg",
                     "tags": ["limited-edition","fabric"],
                     "available": true
                 },
@@ -365,7 +365,7 @@
                     "name": "Heritage Patterns Collection",
                     "description": "Cultural traditional motifs celebrating heritage weaving.",
                     "price": 99.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Heritage+Patterns",
+                    "image_url": "products/premuim3.jpg,
                     "tags": ["heritage","patterns"],
                     "available": true
                 }
