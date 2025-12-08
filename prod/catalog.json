@@ -13,7 +13,7 @@
                     "name": "Men's Traditional Shirt",
                     "description": "Traditional cut with light, breathable handwoven Hablon material.",
                     "price": 45.99,
-                    "image_url": "products/mens-appar.jpg",
+                    "image_url": "../products/mens-appar.jpg",
                     "tags": ["men","shirt","traditional"],
                     "available": true
                 },
@@ -22,7 +22,7 @@
                     "name": "Women's Casual Blouse",
                     "description": "Casual design with variety of colors and patterns in handwoven fabric.",
                     "price": 39.99,
-                    "image_url": "products/womens-appar.jpg",
+                    "image_url": "../products/womens-appar.jpg",
                     "tags": ["women","blouse","casual"],
                     "available": true
                 },
@@ -31,7 +31,7 @@
                     "name": "A-Line Hablon Skirt",
                     "description": "A-line design with soft drape fabric in traditional weaves.",
                     "price": 52.99,
-                    "image_url": "products/skirts-appar.jpg",
+                    "image_url": "../products/skirts-appar.jpg",
                     "tags": ["skirt","women","aline"],
                     "available": true
                 },
@@ -40,7 +40,7 @@
                     "name": "Evening Gown with Metallic Threads",
                     "description": "Elegant evening gown featuring metallic thread accents for festive occasions.",
                     "price": 89.99,
-                    "image_url": "products/gowns-appar.jpg",
+                    "image_url": "../products/gowns-appar.jpg",
                     "tags": ["gown","evening","metallic"],
                     "available": true
                 },
@@ -49,7 +49,7 @@
                     "name": "Hablon-Accented Fashion Jacket",
                     "description": "Modern style jacket with Hablon fabric accents for versatile styling.",
                     "price": 74.99,
-                    "image_url": "products/jacket-appar.jpg",
+                    "image_url": "../products/jacket-appar.jpg",
                     "tags": ["jacket","outerwear"],
                     "available": true
                 },
@@ -58,7 +58,7 @@
                     "name": "Kids' Lightweight Dress",
                     "description": "Lightweight Hablon fabric suitable for children, comfortable and breathable.",
                     "price": 29.99,
-                    "image_url": "products/gowns-appar.jpg",
+                    "image_url": "../products/gowns-appar.jpg",
                     "tags": ["kids","dress"],
                     "available": true
                 }
@@ -74,7 +74,7 @@
                     "name": "Intricately Patterned Scarf",
                     "description": "Wide, soft scarf with intricate Hablon patterns for elegant styling.",
                     "price": 24.99,
-                    "image_url": "products/scarf-acce.jpg",
+                    "image_url": "../products/scarf-acce.jpg",
                     "tags": ["scarf","shawl"],
                     "available": true
                 },
@@ -83,7 +83,7 @@
                     "name": "Hablon Pocket Square",
                     "description": "Premium handkerchief ideal as pocket square or small decorative cloth.",
                     "price": 12.99,
-                    "image_url": "products/handkerchief-acce.jpg",
+                    "image_url": "../products/handkerchief-acce.jpg",
                     "tags": ["handkerchief","pocket-square"],
                     "available": true
                 },
@@ -92,7 +92,7 @@
                     "name": "Lightweight Hablon Headband",
                     "description": "Comfortable headband made from lightweight woven material.",
                     "price": 9.99,
-                    "image_url": "products/headbands-acce.jpg",
+                    "image_url": "../products/headbands-acce.jpg",
                     "tags": ["headband","hair"],
                     "available": true
                 },
@@ -101,7 +101,7 @@
                     "name": "Hablon Formal Necktie",
                     "description": "Premium formal wear accent crafted from handwoven Hablon fabric.",
                     "price": 18.99,
-                    "image_url": "products/neckties-acce.jpg",
+                    "image_url": "../products/neckties-acce.jpg",
                     "tags": ["necktie","formal"],
                     "available": true
                 },
@@ -110,7 +110,7 @@
                     "name": "Hablon Textile Overlay Belt",
                     "description": "Stylish belt with handwoven Hablon textile overlay for versatile wear.",
                     "price": 22.99,
-                    "image_url": "products/belt-acce.jpg",
+                    "image_url": "../products/belt-acce.jpg",
                     "tags": ["belt","accessory"],
                     "available": true
                 },
@@ -119,7 +119,7 @@
                     "name": "Hablon Panel Design Hat",
                     "description": "Stylish cap featuring Hablon fabric panel designs.",
                     "price": 26.99,
-                    "image_url": "products/cap-acce.jpg",
+                    "image_url": "../products/cap-acce.jpg",
                     "tags": ["hat","cap"],
                     "available": true
                 }
@@ -135,7 +135,7 @@
                     "name": "Everyday Hablon Tote Bag",
                     "description": "Spacious tote with reinforced straps for everyday carry.",
                     "price": 54.99,
-                    "image_url": "products/tote-bags.jpg",
+                    "image_url": "../products/tote-bags.jpg",
                     "tags": ["tote","bag"],
                     "available": true
                 },
@@ -144,7 +144,7 @@
                     "name": "Fashion-Forward Shoulder Bag",
                     "description": "Contemporary shoulder bag design with handwoven Hablon fabric.",
                     "price": 64.99,
-                    "image_url": "products/shoulder-bags.jpg",
+                    "image_url": "../products/shoulder-bags.jpg",
                     "tags": ["shoulder-bag","fashion"],
                     "available": true
                 },
@@ -153,7 +153,7 @@
                     "name": "Elegant Woven Handbag",
                     "description": "Sophisticated handbag featuring elegant woven textures.",
                     "price": 69.99,
-                    "image_url": "products/shoulder-bags.jpg",
+                    "image_url": "../products/shoulder-bags.jpg",
                     "tags": ["handbag","woven"],
                     "available": true
                 },
@@ -162,7 +162,7 @@
                     "name": "Formal Event Clutch",
                     "description": "Premium clutch perfect for formal and casual events.",
                     "price": 45.99,
-                    "image_url": "products/clutches-bags.jpg",
+                    "image_url": "../products/clutches-bags.jpg",
                     "tags": ["clutch","evening"],
                     "available": true
                 },
@@ -171,7 +171,7 @@
                     "name": "Compact Coin Purse",
                     "description": "Portable coin purse ideal for storing essentials.",
                     "price": 14.99,
-                    "image_url": "products/coin-bags.jpg",
+                    "image_url": "../products/coin-bags.jpg",
                     "tags": ["coin-purse","small"],
                     "available": true
                 },
@@ -180,7 +180,7 @@
                     "name": "Padded Laptop Sleeve",
                     "description": "Protective sleeve with padded interior and woven exterior.",
                     "price": 39.99,
-                    "image_url": "products/laptop-bags.jpg",
+                    "image_url": "../products/laptop-bags.jpg",
                     "tags": ["laptop-sleeve","gadget"],
                     "available": true
                 }
@@ -196,7 +196,7 @@
                     "name": "Hablon Pillow Case",
                     "description": "These hablon pillow cases blend colorful handwoven plaid fabric with a soft white accent, giving them a warm, homey feel that mixes tradition with a modern touch.",
                     "price": 34.99,
-                    "image_url": "products/hablonhome1.png",
+                    "image_url": "../products/hablonhome1.png",
                     "tags": ["table-runner","home"],
                     "available": true
                 },
@@ -205,7 +205,7 @@
                     "name": "Hablon Table Runner",
                     "description": "A light, pastel-striped hablon table runner that adds a warm, handmade touch to any table.",
                     "price": 28.99,
-                    "image_url": "products/hablonhome2.png",
+                    "image_url": "../products/hablonhome2.png",
                     "tags": ["placemats","coasters"],
                     "available": true
                 },
@@ -214,7 +214,7 @@
                     "name": "Hablon Table Napkin",
                     "description": "A pastel-striped hablon table napkin adds a gentle, handmade warmth to the place setting, making the table feel cozy and thoughtfully prepared.",
                     "price": 32.99,
-                    "image_url": "products/hablonhome3.png",
+                    "image_url": "../products/hablonhome3.png",
                     "tags": ["cushion","decor"],
                     "available": true
                 },
@@ -223,7 +223,7 @@
                     "name": "Hablon Curtain",
                     "description": "A colorful, handwoven curtain that showcases Filipino tradition and adds warmth to any room.",
                     "price": 79.99,
-                    "image_url": "products/hablonhome4.png",
+                    "image_url": "../products/hablonhome4.png",
                     "tags": ["curtains","window"],
                     "available": true
                 },
@@ -232,7 +232,7 @@
                     "name": "Hablon Wall Hanging",
                     "description": "Decorative wall piece featuring artistic weaves.",
                     "price": 59.99,
-                    "image_url": "products/hablonhome5.png",
+                    "image_url": "../products/hablonhome5.png",
                     "tags": ["wall-hanging","art"],
                     "available": true
                 },
@@ -241,7 +241,7 @@
                     "name": "Hablon Bed Runner",
                     "description": "A neutral-toned, handwoven bed runner with stitched accents and fringed edges for a warm and rustic bedroom look.",
                     "price": 59.99,
-                    "image_url": "products/hablonhome6.png",
+                    "image_url": "../products/hablonhome6.png",
                     "tags": ["wall-hanging","art"],
                     "available": true
                 }
@@ -258,7 +258,7 @@
                     "description": "Solid colors or simple weaves for your DIY projects.",
                     "price": 18.99,
                     "unit": "per yard",
-                    "image_url": "products/fabric-plain.jpg",
+                    "image_url": "../products/fabric-plain.jpg",
                     "tags": ["fabric","plain"],
                     "available": true
                 },
@@ -268,7 +268,7 @@
                     "description": "Geometric or traditional designs for creative projects.",
                     "price": 22.99,
                     "unit": "per yard",
-                    "image_url": "products/fabric-striped.jpg",
+                    "image_url": "../products/fabric-striped.jpg",
                     "tags": ["fabric","patterned","striped"],
                     "available": true
                 },
@@ -278,7 +278,7 @@
                     "description": "Shimmering festive weaves for special occasions.",
                     "price": 28.99,
                     "unit": "per yard",
-                    "image_url": "products/fabric-metalic.jpg",
+                    "image_url": "../products/fabric-metalic.jpg",
                     "tags": ["fabric","metallic"],
                     "available": true
                 },
@@ -288,7 +288,7 @@
                     "description": "Personalized patterns and colors based on your preferences.",
                     "price": 34.99,
                     "unit": "per order",
-                    "image_url": "products/fabric-custom.jpg",
+                    "image_url": "../products/fabric-custom.jpg",
                     "tags": ["custom","made-to-order"],
                     "available": true
                 }
@@ -304,7 +304,7 @@
                     "name": "Hablon Fabric Keychain",
                     "description": "Mini fabric patch keychain for everyday carry.",
                     "price": 7.99,
-                    "image_url": "products/sove-key.jpg",
+                    "image_url": "../products/sove-key.jpg",
                     "tags": ["keychain","souvenir"],
                     "available": true
                 },
@@ -313,7 +313,7 @@
                     "name": "Hablon Woven Bookmark",
                     "description": "Flat woven strip bookmark for book lovers.",
                     "price": 6.99,
-                    "image_url": "products/sove-book.jpg",
+                    "image_url": "../products/sove-book.jpg",
                     "tags": ["bookmark","gift"],
                     "available": true
                 },
@@ -322,7 +322,7 @@
                     "name": "Mini Hablon Loom Souvenir",
                     "description": "Decorative miniature loom commemorating traditional weaving.",
                     "price": 16.99,
-                    "image_url": "products/sove-loom.jpg",
+                    "image_url": "../products/sove-loom.jpg",
                     "tags": ["mini-loom","souvenir"],
                     "available": true
                 },
@@ -331,7 +331,7 @@
                     "name": "Hablon Gift Bundle Set",
                     "description": "Bundle containing fabric and accessory combinations.",
                     "price": 44.99,
-                    "image_url": "products/sove-gifts.jpg",
+                    "image_url": "../products/sove-gifts.jpg",
                     "tags": ["gift-set","bundle"],
                     "available": true
                 }
@@ -340,14 +340,14 @@
         {
             "id": "premium",
             "title": "Premium / Limited Collections",
-            "description": "High-value or exclusive Hablon products.",
+            "description": "High-value or exclusive Hablon ../products.",
             "items": [
                 {
                     "sku": "HBL-PRM-001",
                     "name": "Designer Collaboration Collection",
                     "description": "This limited edition hablon fabric from Panublix is a beautifully handwoven, rust.",
                     "price": 129.99,
-                    "image_url": "products/hablondesigner.png",
+                    "image_url": "../products/hablondesigner.png",
                     "tags": ["designer","limited"],
                     "available": true
                 },
@@ -356,7 +356,7 @@
                     "name": "Limited-Edition Hablon Fabric",
                     "description": "This colorful scarf from Roots Collective PH features a handwoven, multi-hued design with fringed edges, showcasing Filipino artistry.",
                     "price": 49.99,
-                    "image_url": "products/hablonlimited.png",
+                    "image_url": "../products/hablonlimited.png",
                     "tags": ["limited-edition","fabric"],
                     "available": true
                 },
@@ -365,7 +365,7 @@
                     "name": "Heritage Patterns Collection",
                     "description": "Hablon fabrics from likhaan.com showcase traditional Filipino motifs, preserving and celebrating this rich textile heritage.",
                     "price": 99.99,
-                    "image_url": "products/hablonheritage.png",
+                    "image_url": "../products/hablonheritage.png",
                     "tags": ["heritage","patterns"],
                     "available": true
                 }
@@ -381,7 +381,7 @@
                     "name": "Customized Corporate Scarves",
                     "description": "Personalized with corporate colors/logos for branding.",
                     "price": 35.99,
-                    "image_url": "products/scarves-corp.jpg",
+                    "image_url": "../products/scarves-corp.jpg",
                     "tags": ["custom","bulk"],
                     "available": true
                 },
@@ -390,7 +390,7 @@
                     "name": "Custom Uniform Fabric",
                     "description": "Custom patterns designed for uniforms and workwear.",
                     "price": 25.99,
-                    "image_url": "products/event-corp.jpg",
+                    "image_url": "../products/event-corp.jpg",
                     "tags": ["uniform","fabric"],
                     "available": true
                 },
@@ -399,7 +399,7 @@
                     "name": "Event Giveaway Bulk Pack",
                     "description": "Hablon tokens in bulk quantities for events.",
                     "price": 99.99,
-                    "image_url": "products/giveaways-corp.jpg",
+                    "image_url": "../products/giveaways-corp.jpg",
                     "tags": ["event","giveaway","bulk"],
                     "available": true
                 },
@@ -408,7 +408,7 @@
                     "name": "Premium Corporate Gift Bundle",
                     "description": "Exclusive assortments designed for corporate clients.",
                     "price": 159.99,
-                    "image_url": "products/corpo-corp.jpg",
+                    "image_url": "../products/corpo-corp.jpg",
                     "tags": ["corporate","gift"],
                     "available": true
                 }
