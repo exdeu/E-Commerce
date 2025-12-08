@@ -258,7 +258,7 @@
                     "description": "Solid colors or simple weaves for your DIY projects.",
                     "price": 18.99,
                     "unit": "per yard",
-                    "image_url": "https://via.placeholder.com/300x250?text=Plain+Fabric",
+                    "image_url": "products/fabric-plain.jpg",
                     "tags": ["fabric","plain"],
                     "available": true
                 },
@@ -268,7 +268,7 @@
                     "description": "Geometric or traditional designs for creative projects.",
                     "price": 22.99,
                     "unit": "per yard",
-                    "image_url": "https://via.placeholder.com/300x250?text=Patterned+Fabric",
+                    "image_url": "products/fabric-striped.jpg",
                     "tags": ["fabric","patterned","striped"],
                     "available": true
                 },
@@ -278,7 +278,7 @@
                     "description": "Shimmering festive weaves for special occasions.",
                     "price": 28.99,
                     "unit": "per yard",
-                    "image_url": "https://via.placeholder.com/300x250?text=Metallic+Fabric",
+                    "image_url": "products/fabric-metalic.jpg",
                     "tags": ["fabric","metallic"],
                     "available": true
                 },
@@ -288,7 +288,7 @@
                     "description": "Personalized patterns and colors based on your preferences.",
                     "price": 34.99,
                     "unit": "per order",
-                    "image_url": "https://via.placeholder.com/300x250?text=Custom+Weave",
+                    "image_url": "products/fabric-custom.jpg",
                     "tags": ["custom","made-to-order"],
                     "available": true
                 }
