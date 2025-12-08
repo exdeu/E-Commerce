@@ -135,7 +135,7 @@
                     "name": "Everyday Hablon Tote Bag",
                     "description": "Spacious tote with reinforced straps for everyday carry.",
                     "price": 54.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Tote+Bag",
+                    "image_url": "products/tote-bags.jpg",
                     "tags": ["tote","bag"],
                     "available": true
                 },
@@ -144,7 +144,7 @@
                     "name": "Fashion-Forward Shoulder Bag",
                     "description": "Contemporary shoulder bag design with handwoven Hablon fabric.",
                     "price": 64.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Shoulder+Bag",
+                    "image_url": "products/shoulder-bags.jpg",
                     "tags": ["shoulder-bag","fashion"],
                     "available": true
                 },
@@ -153,7 +153,7 @@
                     "name": "Elegant Woven Handbag",
                     "description": "Sophisticated handbag featuring elegant woven textures.",
                     "price": 69.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Handbag",
+                    "image_url": "products/shoulder-bags.jpg",
                     "tags": ["handbag","woven"],
                     "available": true
                 },
@@ -162,7 +162,7 @@
                     "name": "Formal Event Clutch",
                     "description": "Premium clutch perfect for formal and casual events.",
                     "price": 45.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Clutch",
+                    "image_url": "products/clutches-bags.jpg",
                     "tags": ["clutch","evening"],
                     "available": true
                 },
@@ -171,7 +171,7 @@
                     "name": "Compact Coin Purse",
                     "description": "Portable coin purse ideal for storing essentials.",
                     "price": 14.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Coin+Purse",
+                    "image_url": "products/coin-bags.jpg",
                     "tags": ["coin-purse","small"],
                     "available": true
                 },
@@ -180,7 +180,7 @@
                     "name": "Padded Laptop Sleeve",
                     "description": "Protective sleeve with padded interior and woven exterior.",
                     "price": 39.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Laptop+Sleeve",
+                    "image_url": "products/laptop-bags.jpg",
                     "tags": ["laptop-sleeve","gadget"],
                     "available": true
                 }
