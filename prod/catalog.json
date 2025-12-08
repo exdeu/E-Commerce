@@ -381,7 +381,7 @@
                     "name": "Customized Corporate Scarves",
                     "description": "Personalized with corporate colors/logos for branding.",
                     "price": 35.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Custom+Scarves",
+                    "image_url": "products/scarves-corp.jpg",
                     "tags": ["custom","bulk"],
                     "available": true
                 },
@@ -390,7 +390,7 @@
                     "name": "Custom Uniform Fabric",
                     "description": "Custom patterns designed for uniforms and workwear.",
                     "price": 25.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Uniform+Fabric",
+                    "image_url": "products/event-corp.jpg",
                     "tags": ["uniform","fabric"],
                     "available": true
                 },
@@ -399,7 +399,7 @@
                     "name": "Event Giveaway Bulk Pack",
                     "description": "Hablon tokens in bulk quantities for events.",
                     "price": 99.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Event+Giveaway",
+                    "image_url": "products/giveaways-corp.jpg",
                     "tags": ["event","giveaway","bulk"],
                     "available": true
                 },
@@ -408,7 +408,7 @@
                     "name": "Premium Corporate Gift Bundle",
                     "description": "Exclusive assortments designed for corporate clients.",
                     "price": 159.99,
-                    "image_url": "https://via.placeholder.com/300x250?text=Corporate+Gifts",
+                    "image_url": "products/corpo-corp.jpg",
                     "tags": ["corporate","gift"],
                     "available": true
                 }
