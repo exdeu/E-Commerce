@@ -3,11 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <title>Shopping Cart | Hablon</title>
     <link href="../bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="cart/cart.js"></script>
+
+    <!-- Optional: Google Font + Icons (safe to remove if offline-only) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: #f5f6fa;
+        }
+
+        /* Cart page header / section wrapper */
+        .cart-header {
+            background: linear-gradient(135deg, #0d6efd, #1d4ed8);
+            color: #f9fafb;
+            padding: 1.75rem 0;
+        }
+
+        .cart-header h1 {
+            font-size: 1.75rem;
+            margin-bottom: 0;
+        }
+
+        .cart-header p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* Main container spacing */
+        .cart-container {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Table styling */
+        .table thead {
+            background-color: #111827;
+            color: #f9fafb;
+        }
+
+        .table th {
+            border-bottom: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .table tbody tr {
+            vertical-align: middle;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: #f1f5f9;
+        }
+
+        /* Order summary card */
+        .summary-card {
+            border-radius: 16px;
+            border: none;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.16);
+        }
+
+        .summary-card .card-body {
+            padding: 1.8rem 1.5rem;
+        }
+
+        .summary-card h5 {
+            font-weight: 600;
+        }
+
+        .summary-line span {
+            font-size: 0.95rem;
+        }
+
+        .summary-line strong {
+            font-size: 1rem;
+        }
+
+        #total_price {
+            font-size: 1.1rem;
+        }
+
+        .badge-note {
+            font-size: 0.8rem;
+            border-radius: 999px;
+        }
+
+        .btn-primary {
+            border-radius: 999px;
+        }
+
+        .btn-outline-secondary {
+            border-radius: 999px;
+        }
+
+        /* Empty cart state (if you want to show something from JS later) */
+        .empty-cart {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            color: #6b7280;
+        }
+
+        .empty-cart i {
+            font-size: 2.5rem;
+            color: #9ca3af;
+            margin-bottom: 0.75rem;
+        }
+
+        @media (max-width: 767.98px) {
+            .cart-header {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- NAVBAR (unchanged) -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Hablon</a>
@@ -26,54 +143,102 @@
             </div>
         </div>
     </nav>
-    <script src="../check.js">
-    </script>
-    <script>  checkLogin('../get_user.php');</script>
 
-    <div class="container mt-5">
-        <div class="row">
+    <script src="../check.js"></script>
+    <script>checkLogin('../get_user.php');</script>
+
+    <!-- CART HEADER STRIP -->
+    <section class="cart-header">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+            <div>
+                <h1 class="mb-1">Your Shopping Cart</h1>
+                <p>Review your items, adjust quantities, and complete your order when you’re ready.</p>
+            </div>
+            <div class="text-md-end">
+                <span class="badge bg-light text-dark badge-note">
+                    <i class="bi bi-shield-check me-1"></i> Secure checkout · Encrypted payments
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CART CONTENT -->
+    <div class="container cart-container">
+        <div class="row g-4">
+            <!-- Cart items -->
             <div class="col-md-8">
-                <h2>Shopping Cart</h2>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Total</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="h4 mb-0">Items in Cart</h2>
+                </div>
+
+                <div class="table-responsive bg-white rounded-3 shadow-sm">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be injected by cart.js -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Optional placeholder that you can toggle via JS when cart is empty
+                <div class="empty-cart" id="empty-cart" style="display:none;">
+                    <i class="bi bi-bag-x"></i>
+                    <p class="mb-2">Your cart is currently empty.</p>
+                    <a href="../prod/products.html" class="btn btn-outline-primary btn-sm">Browse Products</a>
+                </div>
+                -->
             </div>
 
+            <!-- Order summary -->
             <div class="col-md-4">
-                <div class="card">
-                    <div id = "total" class="card-body">
-                        <h5 class="card-title">Order Summary</h5>
-                        <hr>
-                        <div class="d-flex justify-content-between mb-2">
-                            <span>Subtotal:</span>
-                            <span id = "subtotal"></span>
+                <div class="card summary-card">
+                    <div id="total" class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0">Order Summary</h5>
+                            <span class="badge bg-primary-subtle text-primary-emphasis badge-note">
+                                <i class="bi bi-receipt-cutoff me-1"></i> Estimate
+                            </span>
                         </div>
-                        <div class="d-flex justify-content-between mb-2">
+                        <hr>
+
+                        <div class="d-flex justify-content-between mb-2 summary-line">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">₱0.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 summary-line">
                             <span>Shipping:</span>
                             <span>$10.00</span>
                         </div>
-                        <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex justify-content-between mb-3 summary-line">
                             <span>Tax:</span>
                             <span>$85.72</span>
                         </div>
                         <hr>
-                        <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex justify-content-between mb-3 summary-line">
                             <strong>Total:</strong>
-                            <strong id = "total_price"></strong>
+                            <strong id="total_price">$0.00</strong>
                         </div>
-                        <button id="checkout" class="btn btn-primary w-100">Checkout</button>
+
+                        <button id="checkout" class="btn btn-primary w-100 mb-2">
+                            Proceed to Checkout
+                        </button>
                         <script src="checkout.js"></script>
-                        <a class="btn btn-outline-secondary w-100 mt-2" href ="../prod/products.html">Continue Shopping</a>
+
+                        <a class="btn btn-outline-secondary w-100" href="../prod/products.html">
+                            Continue Shopping
+                        </a>
+
+                        <p class="small text-muted mt-3 mb-0">
+                            By placing your order, you agree to our terms and conditions and refund policy.
+                        </p>
                     </div>
                 </div>
             </div>

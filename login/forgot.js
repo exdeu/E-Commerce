@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if(last_password === new_password)
         {
-            document.getElementById("invalid").value = "New and last password can't be equal."
+            document.getElementById("invalid").innerText = "New and last password can't be equal."
             document.getElementById("invalid").style.display = "block";
             return;
         }
@@ -31,12 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log('Change success:', data.message);
                 window.location.href = 'login.html';
             } else {
-                document.getElementById("invalid").value = "Account does not exist."
+                document.getElementById("invalid").innerText= "Account does not exist."
                 document.getElementById("invalid").style.display = "block";
                 console.warn('Change failed:', data.message);
             }
         } catch (err) {
             console.error('Change error:', err);
+            document.getElementById("invalid").innerText = err;
             document.getElementById("invalid").style.display = "block";
         }
     });
