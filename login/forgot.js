@@ -10,7 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const email          = document.getElementById("email").value;
         const last_password  = document.getElementById("lastPassword").value;
         const new_password   = document.getElementById("newPassword").value;
-
+        const isValid = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(new_password);
+        if(!isValid)
+        {
+            document.getElementById("invalid").innerText = "Invalid new password format."
+            document.getElementById("invalid").style.display = "block";
+            return;
+        }
         if(last_password === new_password)
         {
             document.getElementById("invalid").innerText = "New and last password can't be equal."
