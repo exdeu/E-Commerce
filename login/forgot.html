@@ -6,165 +6,15 @@
     <title>Forgot Password | Hablon</title>
     <link href="../bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Optional: Google Font + Icons (remove if offline-only) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-    <style>
-        body {
-            font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            background: radial-gradient(circle at top, #1f2937 0, #020617 45%, #000 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1.5rem;
-        }
-
-        .forgot-wrapper {
-            width: 100%;
-            max-width: 920px;
-        }
-
-        .forgot-card {
-            background-color: #ffffff;
-            border-radius: 22px;
-            box-shadow: 0 22px 60px rgba(0, 0, 0, 0.6);
-            overflow: hidden;
-        }
-
-        /* Left panel */
-        .forgot-left {
-            background: radial-gradient(circle at top left, #667eea, #764ba2 40%, #020617 95%);
-            color: #e5e7eb;
-            position: relative;
-        }
-
-        .forgot-left-overlay {
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.22), transparent 60%);
-        }
-
-        .forgot-left-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .pill-label {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-            padding: 0.25rem 0.85rem;
-            border-radius: 999px;
-            background: rgba(15, 23, 42, 0.8);
-            font-size: 0.75rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: #bfdbfe;
-        }
-
-        .forgot-left h2 {
-            font-weight: 600;
-        }
-
-        .forgot-left p {
-            color: #dbeafe;
-        }
-
-        .info-line {
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-            font-size: 0.9rem;
-            color: #e5e7eb;
-        }
-
-        .info-line i {
-            color: #a5b4fc;
-        }
-
-        /* Right panel / form */
-        .forgot-right {
-            padding: 2.5rem 2.25rem;
-        }
-
-        .forgot-right h3 {
-            font-weight: 600;
-        }
-
-        .forgot-right p {
-            font-size: 0.9rem;
-            color: #6b7280;
-        }
-
-        .form-label {
-            font-weight: 500;
-            font-size: 0.9rem;
-        }
-
-        .form-control {
-            border-radius: 0.65rem;
-        }
-
-        .toggle-password {
-            position: absolute;
-            top: 50%;
-            right: 0.9rem;
-            transform: translateY(-50%);
-            cursor: pointer;
-            color: #6c757d;
-        }
-
-        .btn-submit {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: none;
-            font-weight: 600;
-            border-radius: 999px;
-            padding-block: 0.6rem;
-        }
-
-        .btn-submit:hover {
-            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-            color: #fff;
-        }
-
-        .back-link {
-            text-align: center;
-            margin-top: 18px;
-            font-size: 0.9rem;
-        }
-
-        .back-link a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .back-link a:hover {
-            text-decoration: underline;
-        }
-
-        #invalid {
-            font-size: 0.85rem;
-        }
-
-        @media (max-width: 767.98px) {
-            .forgot-left {
-                display: none;
-            }
-            .forgot-right {
-                padding: 2rem 1.6rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="forgot.css">
 </head>
 <body>
     <div class="forgot-wrapper">
         <div class="row g-0 forgot-card">
-            <!-- Left info panel -->
             <div class="col-md-5 forgot-left d-flex align-items-center">
                 <div class="forgot-left-overlay"></div>
                 <div class="forgot-left-content w-100 px-4 py-5">
@@ -265,23 +115,5 @@
     <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
     <script src="forgot.js"></script>
 
-    <script>
-        // simple show/hide password toggle
-        function togglePassword(inputId, el) {
-            const input = document.getElementById(inputId);
-            const icon = el.querySelector('i');
-            if (!input) return;
-
-            if (input.type === "password") {
-                input.type = "text";
-                icon.classList.remove('bi-eye-slash');
-                icon.classList.add('bi-eye');
-            } else {
-                input.type = "password";
-                icon.classList.remove('bi-eye');
-                icon.classList.add('bi-eye-slash');
-            }
-        }
-    </script>
 </body>
 </html>

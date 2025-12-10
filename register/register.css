@@ -1,0 +1,120 @@
+ body {
+            font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            background: radial-gradient(circle at top, #1f2937 0, #020617 40%, #000 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .auth-wrapper {
+            width: 100%;
+            max-width: 950px;
+        }
+
+        .auth-card {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            background-color: #ffffff;
+        }
+
+        .auth-left {
+            background: radial-gradient(circle at top left, #0d6efd, #1d4ed8 40%, #020617 90%);
+            color: #e5e7eb;
+            position: relative;
+        }
+
+        .auth-left-overlay {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.25), transparent 55%);
+            opacity: 0.9;
+        }
+
+        .auth-left-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .brand-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.25rem 0.85rem;
+            border-radius: 999px;
+            background: rgba(15, 23, 42, 0.7);
+            font-size: 0.75rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #bfdbfe;
+        }
+
+        .auth-left h2 {
+            font-weight: 600;
+        }
+
+        .auth-left p {
+            color: #cbd5f5;
+        }
+
+        .auth-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.85rem;
+            color: #cbd5f5;
+        }
+
+        .auth-feature i {
+            color: #a5b4fc;
+        }
+
+        .auth-right {
+            padding: 2.5rem 2.25rem;
+        }
+
+        .form-label {
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-control {
+            border-radius: 0.65rem;
+        }
+
+        .btn-primary {
+            border-radius: 999px;
+            padding-block: 0.6rem;
+        }
+
+        .form-check-label {
+            font-size: 0.85rem;
+        }
+
+        .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 0.95rem;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #6c757d;
+        }
+
+        #password-validation small {
+            font-size: 0.8rem;
+        }
+
+        .auth-footer-text {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 767.98px) {
+            .auth-left {
+                display: none;
+            }
+            .auth-right {
+                padding: 2rem 1.5rem;
+            }
+        }
