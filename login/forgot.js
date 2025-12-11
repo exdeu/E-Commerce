@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener("submit", async function(event) {
         event.preventDefault();
-        const email          = document.getElementById("email").value;
-        const last_password  = document.getElementById("lastPassword").value;
-        const new_password   = document.getElementById("newPassword").value;
+        const email          = String(document.getElementById("email").value);
+        const new_password   = String(document.getElementById("newPassword").value);
         const isValid = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(new_password);
         if(!isValid)
         {
@@ -17,17 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById("invalid").style.display = "block";
             return;
         }
-        if(last_password === new_password)
-        {
-            document.getElementById("invalid").innerText = "New and last password can't be equal."
-            document.getElementById("invalid").style.display = "block";
-            return;
-        }
         try {
             const res = await fetch('forgot.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email, last_password, new_password })
+                body: JSON.stringify({ email, new_password })
             });
 
             const data = await res.json();
@@ -48,17 +41,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-function togglePassword(inputId, el) {
-    const input = document.getElementById(inputId);
-    const icon = el.querySelector('i');
-    if (!input) return;
 
-if (input.type === "password") {
-    input.type = "text";
-    icon.classList.remove('bi-eye-slash');
-    icon.classList.add('bi-eye');
-} else {
-    input.type = "password";
-    icon.classList.remove('bi-eye');
-    icon.classList.add('bi-eye-slash');
-}}
