@@ -1,17 +1,18 @@
-let confirmed = false;
 
 document.getElementById("pw").addEventListener("input", function() {
     const isValid = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(this.value);
     document.getElementById("password-validation").style.display = isValid ? 'none' : 'block';
-    if(isValid) confirmed = true;
 });
 
 function confirm() {
-    if (confirmed && document.getElementById("pw").value === document.getElementById("confirm-password").value) {
+    const isValid = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(document.getElementById('pw').value);
+    if (isValid && document.getElementById("pw").value === document.getElementById("confirm-password").value) {
         registerUser();
     } else {
-         document.getElementById("acc").style.display = "block";
-         document.getElementById("acc").innerText= 'Passwords don\'t match';
+        document.getElementById("acc").style.display = "block";
+        if(isValid)
+        document.getElementById("acc").innerText= 'Passwords don\'t match';
+        else document.getElementById("acc").innerText= 'Invalid password format';
     }
 }
 
