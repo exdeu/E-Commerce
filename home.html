@@ -227,7 +227,28 @@
             <p class="text-center mb-0 text-white-50">&copy; 2024 Hablon. All rights reserved.</p>
         </div>
     </footer>
+</body>
+<script>
+    try {
+        const res = await fetch('db.php', {
+            method: "POST"
+        });
 
+        data = await res.json();
+
+        if (!data.success) {
+            alert("Error: " + (data.message));
+            return;
+        }
+
+        console.log("Json data:", data.data);
+
+    } catch (err) {
+        console.error("Databse load error:", err);
+        alert("Error loading database data.");
+        return;
+    }
+</script>
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
